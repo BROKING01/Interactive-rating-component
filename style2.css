@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:  hsl(216, 12%, 8%);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Overpass", sans-serif;
+}
+main{
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(220, 13%, 9%));
+    max-width: 410px;
+    height: 410px;
+    border-radius: 30px;
+    padding: 35px;
+}
+main .image img{
+    background-color: hsl(216, 12%, 54%, 0.1);
+    border-radius: 50%;
+    padding: 15px;
+    width: 50px;
+}
+main .head h1{
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+main .head p{
+    color: hsl(217, 12%, 63%);
+    line-height: 1.5;
+    padding-bottom: 30px;
+}
+main .btns{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+main .btns .one{
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: white;
+    background-color: hsl(216, 12%, 54%, 0.1);
+    border: none;
+}
+main .submit{
+    width: 100%; 
+    background-color: rgb(255, 111, 0); 
+    border: none;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.778);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btns .one:hover{
+    background-color: rgb(255, 119, 0);
+    color: black;
+    transition: 0.3s;
+}
+.btns .one:focus{
+    background-color: white;
+    color: black;
+}
+.submit:hover{
+    background-color: white;
+    color: black;
+}
+.thanks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(hsl(213, 19%, 18%), hsl(220, 13%, 9%));
+    padding: 30px 0;
+    width: 410px;
+    height: 410px;
+    border-radius: 30px;
+}
+.thanks img{
+    width: 150px;
+    padding-bottom: 20px;
+}
+.thanks .result p{
+    margin-bottom: 20px;
+    border-radius: 25px;
+    background-color: hsl(216, 12%, 54%, 0.1);
+    color: rgb(255, 136, 0);
+}
+.thanks h2{
+    text-align: center;
+    color: white;
+    padding-bottom: 15px;
+}
+.thanks p{
+    text-align: center;
+    color: hsl(217, 12%, 63%);
+    padding: 0 22px;
+}
+.hidden{
+    display: none;
+}
